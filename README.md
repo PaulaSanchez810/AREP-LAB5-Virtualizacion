@@ -62,7 +62,7 @@ mvn javadoc:javadoc
 ```
 mvn test
 ```
-![](https://github.com/PaulaSanchez810/Lab2-AREP-Heroku/blob/master/img/test.PNG)
+
 ## Construido con 🛠️
 
 * [Maven](https://maven.apache.org/install.html) 
