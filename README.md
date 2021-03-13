@@ -43,30 +43,7 @@ git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 
 2. Compila el proyecto:
 
-```
-mvn package
-```
-3. Ejecutando el programa:
-> Para ejecutar la aplicación de manera local por consola
-Distribución Windows:
-```
-java -cp target/classes;target/dependency/* edu.escuelaing.arep.SparkWebApp
-```
-> Distribución Linux y MacOs
-```
-java  -cp target/classes:target/dependency/* edu.escuelaing.arep.SparkWebApp
-```
-De esta manera podemos ver que la aplicación esta corriendo de forma local
 
-![](https://github.com/PaulaSanchez810/Lab2-AREP-Heroku/blob/master/img/ejecutando%20aplicacion.png)
-
-> Para ver la aplicación de manera local 
-```
- http://localhost:4567/calculadoraArep
-```
-> Despliegue en Heroku: [click acá](https://calculadora-app-arep.herokuapp.com/calculadoraArep)
- 
-![](https://github.com/PaulaSanchez810/Lab2-AREP-Heroku/blob/master/img/Calculadora2.png)
  
 4. Documentación JavaDoc
  
