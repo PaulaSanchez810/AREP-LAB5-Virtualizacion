@@ -44,20 +44,20 @@ git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 ```
 
 ### Implementación
-### Contrucción  de imagen en Docker
-#### creación de imagen logservice
+#### Contrucción  de imagen en Docker
+##### creación de imagen logservice
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/imagen-logservice.png)
 
-#### creación de imagen logservice
+##### creación de imagen logservice
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/imagen-roundrobi.png)
 
-#### verificación de imagen construida
+##### verificación de imagen construida
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/imagen-logservice-roundrobin.png)
 
-#### contenedor dorcker enlazada a un puerto físico
+##### contenedor dorcker enlazada a un puerto físico
 
 > Logservice
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/contenedorlogservice.png)
@@ -65,11 +65,11 @@ git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 > roundrobin
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/contenedor-roundrobin.png)
 
-#### verificación contenedor corriendo
+##### verificación contenedor corriendo
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/contenedorlogservice-Run.png)
 
-### creando referencia de imagen con el repositorio 
+##### Creando referencia de imagen con el repositorio 
 
 > logservice
 
@@ -79,7 +79,7 @@ git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidoroundrobin-repo.png)
 
-### Subiendo imagenes docker al repositorio 
+##### Subiendo imagenes docker al repositorio 
 
 > logservice
 
