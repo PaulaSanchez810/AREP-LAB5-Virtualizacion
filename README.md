@@ -7,6 +7,8 @@ en una máquina virtual creada en AWS. se crearán tres instancias, la primera o
 en un servicio REST y en el último se creará una aplicación que implementa un balanceo de carga del algoritmo Round Robin, delegando el procesamiento del mensaje y el retorno
 de la respuesta a cada instancia del servicio.
 
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/1.png)
+
 ## Información del proyecto 📁
 
 Para ver detalle del darrollo de la práctica y concepto clave, puede consultar el documento del laboratorio que se creo en latex y esta en formato pdf:
@@ -41,27 +43,58 @@ java -showversion
 git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 ```
 
-2. Compila el proyecto:
+### Implementación
+### Contrucción  de imagen en Docker
+#### creación de imagen logservice
 
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/imagen-logservice.png)
 
- 
-4. Documentación JavaDoc
- 
-> > POR TERMINAL DE COMANDOS
+#### creación de imagen logservice
 
-```
-mvn javadoc:javadoc
-```
-> En Repositorio
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/imagen-roundrobi.png)
 
-[Apidocs](https://github.com/PaulaSanchez810/Lab2-AREP-Heroku/tree/master/site/apidocs)
-## Ejecutando las pruebas ✅
+#### verificación de imagen construida
 
-> POR TERMINAL DE COMANDOS
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/imagen-logservice-roundrobin.png)
 
-```
-mvn test
-```
+#### contenedor dorcker enlazada a un puerto físico
+
+> Logservice
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/contenedorlogservice.png)
+
+> roundrobin
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/contenedor-roundrobin.png)
+
+#### verificación contenedor corriendo
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/contenedorlogservice-Run.png)
+
+### creando referencia de imagen con el repositorio 
+
+> logservice
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidologservice-repo.png)
+
+> roundrobin
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidoroundrobin-repo.png)
+
+### Subiendo imagenes docker al repositorio 
+
+> logservice
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidologservice-repo-push.png)
+
+> docker hub logservice
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidologservice-repo-2.png)
+
+> roundrobin
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidoroundrobin-repo-push.png)
+
+> docker hub roundrobin 
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidoroundrobin-repo-2.png)
+
 
 ## Construido con 🛠️
 
