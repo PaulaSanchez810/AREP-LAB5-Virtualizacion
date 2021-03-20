@@ -1,11 +1,7 @@
 # AREP-LAB5-Virtualizacion
-# Taller de de modularización con virtualización e Introducción a Docker y a AWS
+# Modularización con virtualización e Introducción a Docker y a AWS
 
-En este taller que se desarrolla durante este documento tiene énfasis en la creación de una aplicación web usando
-Spark Java a través de contenedores e imágenes diseñadas y desplegadas a través de docker, que posteriormente se desplegarán
-en una máquina virtual creada en AWS. se crearán tres instancias, la primera ofrece un servicio de base de datos con MongoDB, la segunda ofrecerá un servicio de logService
-en un servicio REST y en el último se creará una aplicación que implementa un balanceo de carga del algoritmo Round Robin, delegando el procesamiento del mensaje y el retorno
-de la respuesta a cada instancia del servicio.
+Este Laboratorio  tiene énfasis en la creación de una aplicación web usando Spark Java a través de contenedores e imágenes diseñadas y desplegadas a través de docker, que posteriormente se desplegarán en una máquina virtual creada en AWS. se crearán tres instancias, la primera ofrece un servicio de base de datos con MongoDB, la segunda ofrecerá un servicio de logService en un servicio REST y en el último se creará una aplicación que implementa un balanceo de carga del algoritmo Round Robin, delegando el procesamiento del mensaje y el retorno de la respuesta a cada instancia del servicio.
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/1.png)
 
