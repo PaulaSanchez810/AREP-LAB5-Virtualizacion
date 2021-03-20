@@ -95,7 +95,32 @@ git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 > docker hub roundrobin 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidoroundrobin-repo-2.png)
 
+### Despliegue en ASW
 
+#### inicio de maquina ASW por SSH en Windows
+> Para porder usar SSH en Windows, para ingresar a la maquina de ASW, debe utilizar PowerShell y ejecutar los siguinetes comandos:
+$path = ".\<llave privada de la maquina en Asw>"
+##### Restablecer para eliminar permisos explícitos
+icacls.exe $path /reset
+##### Dar permiso de lectura explícito al usuario actual
+icacls.exe $path /GRANT:R "$($env:USERNAME):(R)"
+##### Deshabilite la herencia y elimine los permisos heredados
+icacls.exe $path /inheritance:r
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/SSH-powershell.png)
+
+#### conectando a la instancia AWS
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/accediendo-AWS.png)
+
+#### instacia de un contenedor docker
+
+> logservice
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/ASW-instanciadocker-logservice.png)
+
+> roundrobin
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/ASW-instanciadocker-roundrobin.png)
 ## Construido con 🛠️
 
 * [Maven](https://maven.apache.org/install.html) 
