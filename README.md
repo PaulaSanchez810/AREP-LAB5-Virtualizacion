@@ -98,14 +98,14 @@ git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 ### Despliegue en ASW
 
 #### inicio de maquina ASW por SSH en Windows
-> Para porder usar SSH en Windows, para ingresar a la maquina de ASW, debe utilizar PowerShell y ejecutar los siguinetes comandos:
-$path = ".\<llave privada de la maquina en Asw>"
+Para porder usar SSH en Windows, para ingresar a la maquina de ASW, debe utilizar PowerShell y ejecutar los siguinetes comandos:
+> $path = ".\<llave privada de la maquina en Asw>"
 ##### Restablecer para eliminar permisos explícitos
-icacls.exe $path /reset
+> icacls.exe $path /reset
 ##### Dar permiso de lectura explícito al usuario actual
-icacls.exe $path /GRANT:R "$($env:USERNAME):(R)"
+> icacls.exe $path /GRANT:R "$($env:USERNAME):(R)"
 ##### Deshabilite la herencia y elimine los permisos heredados
-icacls.exe $path /inheritance:r
+> icacls.exe $path /inheritance:r
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/SSH-powershell.png)
 
@@ -121,6 +121,11 @@ icacls.exe $path /inheritance:r
 > roundrobin
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/ASW-instanciadocker-roundrobin.png)
+
+#### Resultado de la  pagina
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/Captura.PNG)
+
 ## Construido con 🛠️
 
 * [Maven](https://maven.apache.org/install.html) 
