@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <title> Mensaje AREP 2021-1 </title>
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+    <script type="text/javascript" src="js/apiclient.js" ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        h3 { color: white; }
+    </style>
+</head>
+
+<body onload = "apiclient.getMessages()">
+<center>
+    <div class="table-title" >
+        <h3>LABORATORIO DOCKER Y ASW </h3>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </div>
+
+    <form>
+        <input type=text name=fecha id="fecha" >
+        <br>
+        <input type=button value="Enviar mensaje"  onclick="apiclient.addMessage(); $('#data').val('')">
+    </form>
+</center>
+    <center>
+        <table class="table table-striped" id="messages" style="
+
+        width: 50%">
+            <thead>
+            <tr>
+                <th scope="col">Mensaje</th>
+                <th scope="col">Fecha</th>
+            </tr>
+            </thead>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </center>
+</center>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+</body>
+</html>
