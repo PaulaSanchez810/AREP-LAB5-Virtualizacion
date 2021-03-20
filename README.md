@@ -132,7 +132,7 @@ Para porder usar SSH en Windows, para ingresar a la maquina de ASW, debe utiliza
 * [Git](https://gitforwindows.org/)
 * [Java](https://www.java.com/es/download/)
 * [AWS](https://aws.amazon.com/es/education/awseducate/)
-* [MongoDB](https://www.mongodb.com/es
+* [MongoDB](https://www.mongodb.com/es)
 
 
 ## Autor ✒️
