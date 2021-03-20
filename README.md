@@ -11,7 +11,7 @@ de la respuesta a cada instancia del servicio.
 
 Para ver detalle del darrollo de la práctica y concepto clave, puede consultar el documento del laboratorio que se creo en latex y esta en formato pdf:
 
-> Para abrir informe del laboratorio [click acá](pdf)
+> Para abrir informe del laboratorio [click acá](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/Taller-Docker.pdf)
 
 
 ### Pre-requisitos 📜
