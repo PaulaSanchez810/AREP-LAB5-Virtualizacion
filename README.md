@@ -118,6 +118,12 @@ Para porder usar SSH en Windows, para ingresar a la maquina de ASW, debe utiliza
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/ASW-instanciadocker-roundrobin.png)
 
+#### Creación grupo de seguridad
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/aws-gruposeguridad.png)
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/asw-red.png)
+
 #### Resultado de la  pagina
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/Captura.PNG)
