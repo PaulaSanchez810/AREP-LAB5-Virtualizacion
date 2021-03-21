@@ -1,11 +1,7 @@
 # AREP-LAB5-Virtualizacion
-# Taller de de modularización con virtualización e Introducción a Docker y a AWS
+# Modularización con virtualización e Introducción a Docker y a AWS
 
-En este taller que se desarrolla durante este documento tiene énfasis en la creación de una aplicación web usando
-Spark Java a través de contenedores e imágenes diseñadas y desplegadas a través de docker, que posteriormente se desplegarán
-en una máquina virtual creada en AWS. se crearán tres instancias, la primera ofrece un servicio de base de datos con MongoDB, la segunda ofrecerá un servicio de logService
-en un servicio REST y en el último se creará una aplicación que implementa un balanceo de carga del algoritmo Round Robin, delegando el procesamiento del mensaje y el retorno
-de la respuesta a cada instancia del servicio.
+Este Laboratorio  tiene énfasis en la creación de una aplicación web usando Spark Java a través de contenedores e imágenes diseñadas y desplegadas a través de docker, que posteriormente se desplegarán en una máquina virtual creada en AWS. se crearán tres instancias, la primera ofrece un servicio de base de datos con MongoDB, la segunda ofrecerá un servicio de logService en un servicio REST y en el último se creará una aplicación que implementa un balanceo de carga del algoritmo Round Robin, delegando el procesamiento del mensaje y el retorno de la respuesta a cada instancia del servicio.
 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/1.png)
 
@@ -95,6 +91,36 @@ git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 > docker hub roundrobin 
 ![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/dockersubidoroundrobin-repo-2.png)
 
+### Despliegue en ASW
+
+#### inicio de maquina ASW por SSH en Windows
+Para porder usar SSH en Windows, para ingresar a la maquina de ASW, debe utilizar PowerShell y ejecutar los siguinetes comandos:
+> $path = ".\<llave privada de la maquina en Asw>"
+##### Restablecer para eliminar permisos explícitos
+> icacls.exe $path /reset
+##### Dar permiso de lectura explícito al usuario actual
+> icacls.exe $path /GRANT:R "$($env:USERNAME):(R)"
+##### Deshabilite la herencia y elimine los permisos heredados
+> icacls.exe $path /inheritance:r
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/SSH-powershell.png)
+
+#### conectando a la instancia AWS
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/accediendo-AWS.png)
+
+#### instacia de un contenedor docker
+
+> logservice
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/ASW-instanciadocker-logservice.png)
+
+> roundrobin
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/ASW-instanciadocker-roundrobin.png)
+
+#### Resultado de la  pagina
+
+![](https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion/blob/master/img/Captura.PNG)
 
 ## Construido con 🛠️
 
@@ -102,7 +128,7 @@ git https://github.com/PaulaSanchez810/AREP-LAB5-Virtualizacion.git
 * [Git](https://gitforwindows.org/)
 * [Java](https://www.java.com/es/download/)
 * [AWS](https://aws.amazon.com/es/education/awseducate/)
-* [MongoDB](https://www.mongodb.com/es
+* [MongoDB](https://www.mongodb.com/es)
 
 
 ## Autor ✒️
